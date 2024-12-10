@@ -80,3 +80,32 @@ body, ul, li {
         }      
     }
   }
+
+  .cajasSkill {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 35px 10px;
+    .caja {
+        flex: 1;
+        text-align: left;
+        margin: 0 0 0 150px;
+
+        h2{
+            font-family: $font-family-title-1;
+            font-weight: $font-weight-regular;
+            text-decoration: underline;
+        }
+        img {
+            width: 250px; 
+            display: inline;
+        }    
+        .skills-format {
+            display: flex;
+            gap: 25px; 
+            p {
+                margin: 0;
+            }
+        }
+    }
+  }
