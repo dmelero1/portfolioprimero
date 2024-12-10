@@ -68,15 +68,14 @@ body, ul, li {
     padding: 35px 10px;
     .caja {
         flex: 1;
-        text-align: center;
         h3{
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin: 0 200px 0 0;
             font-family: $font-family-title-1;
             font-weight: $font-weight-regular;
         }
         img {
-            width: 350px; 
+            margin-left: 150px;
+            width: 200px; 
             display: inline;
         }      
     }
