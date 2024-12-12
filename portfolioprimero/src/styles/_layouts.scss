@@ -117,17 +117,6 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 35px 10px;
-  .caja {
-    flex: 1;
-    text-align: left;
-    margin: 0 150px 0 150px;
-
-    h3 {
-      font-family: $font-family-title-1;
-      font-weight: $font-weight-regular;
-      text-align: center;
-    }
-  }
   .image-switcher {
     display: flex;
     align-items: center;
@@ -151,8 +140,38 @@ li {
         color: $secundario;
       }
     }
+    .caja {
+      flex: 1;
+      text-align: left;
+      margin: 0 150px 0 150px;
+      h3 {
+        font-family: $font-family-title-1;
+        font-weight: $font-weight-regular;
+        text-align: center;
+      }
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secundario;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 40px;
+        cursor: pointer;
+        .custom-button {
+          cursor: pointer;        
+          a {
+            text-decoration: $text-decoration-none; 
+          }
+        }
+        .fa-solid.fa-code {
+          color: $blanco; 
+        }                
+      }
+    }
   }
 }
+
 
 .cajasContact {
   display: flex;
@@ -167,7 +186,7 @@ li {
     h2 {
       font-family: $font-family-title-1;
       font-weight: $font-weight-regular;
-      span{
+      span {
         font-weight: lighter;
       }
     }
