@@ -23,9 +23,9 @@ $breakpoints: (
   @if $raw-query {
     $query: if(
       type-of($raw-query) == "string",
-      unquote($raw-query),
-      inspect($raw-query)
-    );
+        unquote($raw-query),
+        inspect($raw-query)
+        );
 
     @media #{$query} {
       @content;
@@ -40,7 +40,51 @@ body {
   background-color: $gris-claro;
 
   @include respond-to("small") {
+    header {
+      padding: 40px 20px;
+      .logo img {
+        max-height: 50px;
+      }
+      ul {
+        gap: 20px;
+          margin: 0;
+          a {
+            font-size: $font-size-12;
+          }
+      }
+    }
+    .cajasIndex{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+      .caja {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        h2 {
+          margin: 0 10px;
+          font-size: $font-size-25;
+          text-align: center;
+          .texto-bold {
+            font-size: $font-size-36;
+          }
+        }
+        img {
+          width: 80%;
+          margin-bottom: 10px; 
+        }
+        button {
+          width: 30%;
+          margin: 10px 0 0 0;
+          &.boton1, &.boton2 {
+            padding: 12px;
+          }
+        }
+      }
+    }
   }
+
   @include respond-to("medium") {
+
   }
 }
