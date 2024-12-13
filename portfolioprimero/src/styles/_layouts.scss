@@ -12,24 +12,25 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 10px;
+  padding: 65px 10px;
   .caja {
     flex: 1;
     text-align: center;
     h2 {
       color: $gris-oscuro;
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin: 0 125px;
       font-family: $font-family-heebo-bold;
       font-weight: $font-weight-regular;
+      text-align: left;
+      font-size: $font-size-54;
       .texto-bold {
         font-weight: $font-weight-bold-1;
-        font-size: 28px;
+        font-size: $font-size-64;
       }
       .texto-primario {
         padding: 0;
         margin: 0;
-        color: $primario;
+        color: $primario; 
       }
     }
     img {
@@ -45,7 +46,7 @@ li {
         background-color: $primario;
         border: 1px solid $gris-claro;
         &:hover{
-        background-color: $primario-hover;
+          background-color: $primario-hover;
         }
         a {
           text-decoration: $text-decoration-none;
@@ -86,7 +87,7 @@ li {
       font-weight: $font-weight-regular;
     }
     img {
-      margin-left: 150px;
+      margin-left: 220px;
       width: 200px;
       display: inline;
     }
@@ -97,11 +98,11 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 10px;
+  padding: 50px 10px;
   .caja {
     flex: 1;
     text-align: left;
-    margin: 0 0 0 150px;
+    margin: 0 0 0 250px;
 
     h2 {
       font-family: $font-family-heebo-bold;
@@ -154,10 +155,14 @@ li {
       flex: 1;
       text-align: left;
       margin: 0 150px 0 150px;
-      h2 {
+      h1 {
         font-family: $font-family-heebo-bold;
         font-weight: $font-weight-regular;
         text-align: center;
+        font-size: $font-size-36;
+      }
+      p {
+        font-size: $font-size-25;
       }
       button {
         display: inline-flex;
@@ -199,6 +204,7 @@ li {
     h2 {
       font-family: $font-family-heebo-bold;
       font-weight: $font-weight-regular;
+      font-size: $font-size-32;
       span {
         font-weight: lighter;
       }
