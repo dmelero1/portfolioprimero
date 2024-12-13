@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px; 
+    padding: 40px 60px; 
   
     .logo img {
       max-height: 100px; 
@@ -15,10 +15,11 @@ header {
       li {
       margin: 0;
           a {
+          font-family: $font-family-heebo-bold;
           text-decoration: $text-decoration-none;
           color: $negro; 
               &:hover {
-              color: $secundario;
+              color: $primario-hover;
               }
           }
       }
