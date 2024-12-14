@@ -102,9 +102,39 @@ body {
       }
     }
 
+    .cajasSkill {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+      .caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        max-width: 350px; 
+        h2 {
+          align-self: flex-start;
+          width: 100%; 
+        }
+        img {
+          margin-top: 50px;
+        }
+        .skills-format {
+          align-self: flex-start;
+          width: 100%; 
+          p {
+            margin: 5px 0; 
+            text-align: left;
+          }
+        }
+        
+      }
+    }
+    
     footer {
       gap: 20px;
-      margin: 50px 30px 5px 30px;
+      margin: 20px 30px 15px 30px;
     }
   }
 
