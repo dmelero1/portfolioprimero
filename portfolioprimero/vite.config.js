@@ -2,21 +2,20 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  root: 'portfolioprimero',
   build: {
     outDir: 'docs',
     rollupOptions: {
       input: {
-        index: resolve(__dirname, 'portfolioprimero/index.html'),
-        about: resolve(__dirname, 'portfolioprimero/about.html'),
-        skill: resolve(__dirname, 'portfolioprimero/skill.html'),
-        project: resolve(__dirname, 'portfolioprimero/project.html'),
-        contact: resolve(__dirname, 'portfolioprimero/contact.html'),
+        index: resolve(__dirname, './src/index.html'),
+        about: resolve(__dirname, './src/about.html'),
+        skill: resolve(__dirname, './src/skill.html'),
+        project: resolve(__dirname, './src/project.html'),
+        contact: resolve(__dirname, './src/contact.html'),
       },
     },
   },
   base: './', 
-  css: {
+  scss: {
     preprocessorOptions: {
       scss: {
         additionalData: `@import "./src/styles/_footer.scss";`,

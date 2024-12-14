@@ -1,5 +1,6 @@
 console.log("Vite está funcionando correctamente");
 import gsap from "gsap";
+import '../src/styles/main.scss'; 
 
 const images = [
   {
