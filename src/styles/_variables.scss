@@ -1,0 +1,52 @@
+  @font-face {
+    font-family: 'KanitBold';
+    src: url('../assets/fonts/Kanit-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'HeeboBold';
+    src: url('../assets/fonts/Heebo-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'KanitRegular';
+    src: url('../assets/fonts/Kanit-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'HeeboRegular';
+    src: url('../assets/fonts/Heebo-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+//Colores
+$blanco: #ffffff;
+$gris-claro: #c9c8c8;
+$gris-oscuro: #636363;
+$negro: #000000;
+$primario: #21ba21;
+$primario-hover: #056c00;
+$secundario: #3c8ef9;
+$secundario-hover: #05418f;
+//Fonts
+$font-family-heebo-bold: String value;
+$font-family-heebo-regular: String value;
+$font-family-kanit-bold: Kanit;
+$font-family-kanit-regular: Kanit;
+$font-weight-bold-1: Bold;
+$font-weight-medium: Medium;
+$font-weight-regular: Regular;
+$font-size-12: 12px;
+$font-size-18: 18px;
+$font-size-25: 25px;
+$font-size-32: 32px;
+$font-size-36: 36px;
+$font-size-54: 54px;
+$font-size-64: 64px;
+
+$list-style-none: none;
+$text-decoration-none: none;

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./src/styles/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./src/assets/img/logoPortfolioCirculo.PNG" alt="Logo" />
+      </a>
+    </div>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="skill.html">SKILL</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </header>
+
+  <body>
+    <section class="cajasProject">
+      <div class="image-switcher">
+        <button class="arrow-button" id="previous-button"><i class="fa-solid fa-chevron-left"></i></button>
+        <img id="main-image" src="./src/assets/img/imagenWebDiseños.jpg" alt="Web diseño">
+        <button class="arrow-button" id="next-button"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="caja">
+          <h1 id="image-title">My Design Web:</h1>
+          <p id="image-description">I build a web where you can customize your tees for whatever purpose you want.</p>
+          <button class="custom-button">
+            <a id="dynamic-link" href="https://dmelero1.github.io/maquetacionSassVite/" target="_blank">
+              <i class="fa-solid fa-code"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

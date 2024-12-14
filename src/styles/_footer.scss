@@ -1,0 +1,25 @@
+@use "globals" as *;
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 250px 10px 250px;
+    padding: 20px 10px;
+    border-radius: 30px;
+    background-color: $primario;
+    img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+    a {
+        color: $negro;
+        text-align: center;
+        list-style: $list-style-none;
+        text-decoration: $text-decoration-none;
+        display: flex;
+        align-items: center;
+    }
+}

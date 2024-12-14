@@ -1,0 +1,217 @@
+@use "globals" as *;
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: $list-style-none;
+}
+
+.cajasIndex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 10px;
+  .caja {
+    flex: 1;
+    text-align: center;
+    h2 {
+      color: $gris-oscuro;
+      margin: 0 125px;
+      font-family: $font-family-heebo-bold;
+      font-weight: $font-weight-regular;
+      text-align: left;
+      font-size: $font-size-54;
+      .texto-bold {
+        font-weight: $font-weight-bold-1;
+        font-size: $font-size-64;
+      }
+      .texto-primario {
+        padding: 0;
+        margin: 0;
+        color: $primario; 
+      }
+    }
+    img {
+      width: 350px;
+      display: inline;
+    }
+    button {
+      padding: 12px 25px;
+      border-radius: 25px;
+
+      &.boton1 {
+        margin-top: 5px;
+        background-color: $primario;
+        border: 1px solid $gris-claro;
+        &:hover{
+          background-color: $primario-hover;
+        }
+        a {
+          text-decoration: $text-decoration-none;
+          list-style-type: $list-style-none;
+          color: $blanco;
+        }
+      }
+
+      &.boton2 {
+        background-color: $gris-claro;
+        border: 1px solid $gris-oscuro;
+        &:hover{
+          background-color: $gris-oscuro;
+        }
+        a {
+          text-decoration: $text-decoration-none;
+          list-style-type: $list-style-none;
+          color: $gris-oscuro;
+          &:hover{
+            color: $blanco;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cajasAbout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 10px;
+  .caja {
+    flex: 1;
+    h3 {
+      margin: 20px 200px 0 0;
+      font-family: $font-family-heebo-bold;
+      font-weight: $font-weight-regular;
+    }
+    img {
+      margin-left: 220px;
+      width: 200px;
+      display: inline;
+    }
+  }
+}
+
+.cajasSkill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10px;
+  .caja {
+    flex: 1;
+    text-align: left;
+    margin: 0 0 0 250px;
+
+    h2 {
+      font-family: $font-family-heebo-bold;
+      font-weight: $font-weight-bold-1;
+      text-decoration: underline;
+    }
+    img {
+      width: 250px;
+      display: inline;
+    }
+    .skills-format {
+      display: flex;
+      gap: 25px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.cajasProject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 10px;
+  .image-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 0 150px;
+
+    img {
+      max-width: 450px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .arrow-button {
+      color: $secundario;
+      background-color: $gris-claro;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        color: $secundario-hover;
+      }
+    }
+    .caja {
+      flex: 1;
+      text-align: left;
+      margin: 0 150px 0 150px;
+      h1 {
+        font-family: $font-family-heebo-bold;
+        font-weight: $font-weight-regular;
+        text-align: center;
+        font-size: $font-size-36;
+      }
+      p {
+        font-size: $font-size-25;
+      }
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secundario;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 40px;
+        cursor: pointer;
+        &:hover{
+          background-color: $secundario-hover;
+        }
+        .custom-button {
+          cursor: pointer;        
+          a {
+            text-decoration: $text-decoration-none; 
+          }
+        }
+        .fa-solid.fa-code {
+          color: $blanco; 
+        }                
+      }
+    }
+  }
+}
+
+
+.cajasContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 10px;
+  .caja {
+    flex: 1;
+    text-align: center;
+    margin: 0 0 0 auto;
+
+    h2 {
+      font-family: $font-family-heebo-bold;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-32;
+      span {
+        font-weight: lighter;
+      }
+    }
+    img {
+      width: 200px;
+      display: inline;
+    }
+  }
+}
