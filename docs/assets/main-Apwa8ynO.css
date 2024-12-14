@@ -1,0 +1,509 @@
+@font-face {
+    font-family: KanitBold;
+    src: url(./Kanit-Bold-DynpTRNW.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: HeeboBold;
+    src: url(./Heebo-Bold-BRgkB2nM.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: KanitRegular;
+    src: url(./Kanit-Regular-bWYhieLo.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: HeeboRegular;
+    src: url(./Heebo-Regular-BhNGL1ba.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400
+}
+
+body {
+    background-color: #c9c8c8
+}
+
+@media (max-width: 768px) {
+    body header {
+        padding: 40px 20px
+    }
+
+    body header .logo img {
+        max-height: 50px
+    }
+
+    body header ul {
+        gap: 20px;
+        margin: 0
+    }
+
+    body header ul a {
+        font-size: 12px
+    }
+
+    body .cajasIndex {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px
+    }
+
+    body .cajasIndex .caja {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    body .cajasIndex .caja h2 {
+        margin: 0 10px;
+        font-size: 25px;
+        text-align: center
+    }
+
+    body .cajasIndex .caja h2 .texto-bold {
+        font-size: 36px
+    }
+
+    body .cajasIndex .caja img {
+        width: 80%;
+        margin-bottom: 10px
+    }
+
+    body .cajasIndex .caja button {
+        width: 30%;
+        margin: 10px 0 0
+    }
+
+    body .cajasIndex .caja button.boton1,
+    body .cajasIndex .caja button.boton2 {
+        padding: 12px
+    }
+
+    body .cajasAbout {
+        flex-direction: column;
+        align-items: center
+    }
+
+    body .cajasAbout .caja {
+        width: 100%;
+        text-align: center
+    }
+
+    body .cajasAbout .caja h3 {
+        font-size: 18px;
+        margin: 0 25px
+    }
+
+    body .cajasAbout .caja img {
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 40px
+    }
+
+    body .cajasSkill {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px
+    }
+
+    body .cajasSkill .caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        max-width: 350px
+    }
+
+    body .cajasSkill .caja h2 {
+        align-self: flex-start;
+        width: 100%
+    }
+
+    body .cajasSkill .caja img {
+        margin-top: 50px
+    }
+
+    body .cajasSkill .caja .skills-format {
+        align-self: flex-start;
+        width: 100%
+    }
+
+    body .cajasSkill .caja .skills-format p {
+        margin: 5px 0;
+        text-align: left
+    }
+
+    body .cajasProject {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 5px
+    }
+
+    body .cajasProject .image-switcher {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0
+    }
+
+    body .cajasProject .image-switcher .caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        max-width: 440px
+    }
+
+    body .cajasProject .image-switcher .caja h1 {
+        margin: 0;
+        text-decoration: underline
+    }
+
+    body .cajasProject .image-switcher .caja p {
+        margin-bottom: 20px
+    }
+
+    body .cajasProject .image-switcher .caja button {
+        padding: 10px 20px
+    }
+
+    body .cajasContact {
+        flex-direction: column;
+        justify-content: center
+    }
+
+    body .cajasContact .caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 360px
+    }
+
+    body .cajasContact .caja h2 {
+        font-size: 25px;
+        text-align: left;
+        align-self: flex-start;
+        width: 100%
+    }
+
+    body .cajasContact .caja img {
+        display: inline-block
+    }
+
+    body footer {
+        gap: 20px;
+        margin: 20px 30px 15px
+    }
+}
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.cajasIndex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 10px
+}
+
+.cajasIndex .caja {
+    flex: 1;
+    text-align: center
+}
+
+.cajasIndex .caja h2 {
+    color: #636363;
+    margin: 0 125px;
+    font-family: String value;
+    font-weight: Regular;
+    text-align: left;
+    font-size: 54px
+}
+
+.cajasIndex .caja h2 .texto-bold {
+    font-weight: 700;
+    font-size: 64px
+}
+
+.cajasIndex .caja h2 .texto-primario {
+    padding: 0;
+    margin: 0;
+    color: #21ba21
+}
+
+.cajasIndex .caja img {
+    width: 350px;
+    display: inline
+}
+
+.cajasIndex .caja button {
+    padding: 12px 25px;
+    border-radius: 25px
+}
+
+.cajasIndex .caja button.boton1 {
+    margin-top: 5px;
+    background-color: #21ba21;
+    border: 1px solid #c9c8c8
+}
+
+.cajasIndex .caja button.boton1:hover {
+    background-color: #056c00
+}
+
+.cajasIndex .caja button.boton1 a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff
+}
+
+.cajasIndex .caja button.boton2 {
+    background-color: #c9c8c8;
+    border: 1px solid #636363
+}
+
+.cajasIndex .caja button.boton2:hover {
+    background-color: #636363
+}
+
+.cajasIndex .caja button.boton2 a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #636363
+}
+
+.cajasIndex .caja button.boton2 a:hover {
+    color: #fff
+}
+
+.cajasAbout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10px
+}
+
+.cajasAbout .caja {
+    flex: 1
+}
+
+.cajasAbout .caja h3 {
+    margin: 20px 200px 0 0;
+    font-family: String value;
+    font-weight: Regular
+}
+
+.cajasAbout .caja img {
+    margin-left: 220px;
+    width: 200px;
+    display: inline
+}
+
+.cajasSkill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10px
+}
+
+.cajasSkill .caja {
+    flex: 1;
+    text-align: left;
+    margin: 0 0 0 250px
+}
+
+.cajasSkill .caja h2 {
+    font-family: String value;
+    font-weight: 700;
+    text-decoration: underline
+}
+
+.cajasSkill .caja img {
+    width: 250px;
+    display: inline
+}
+
+.cajasSkill .caja .skills-format {
+    display: flex;
+    gap: 25px
+}
+
+.cajasSkill .caja .skills-format p {
+    margin: 0
+}
+
+.cajasProject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10px
+}
+
+.cajasProject .image-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 0 150px
+}
+
+.cajasProject .image-switcher img {
+    max-width: 450px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform .2s ease
+}
+
+.cajasProject .image-switcher .arrow-button {
+    color: #3c8ef9;
+    background-color: #c9c8c8;
+    border: none;
+    cursor: pointer
+}
+
+.cajasProject .image-switcher .arrow-button:hover {
+    color: #05418f
+}
+
+.cajasProject .image-switcher .caja {
+    flex: 1;
+    text-align: left;
+    margin: 0 150px
+}
+
+.cajasProject .image-switcher .caja h1 {
+    font-family: String value;
+    font-weight: Regular;
+    text-align: center;
+    font-size: 36px
+}
+
+.cajasProject .image-switcher .caja p {
+    font-size: 25px
+}
+
+.cajasProject .image-switcher .caja button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c8ef9;
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer
+}
+
+.cajasProject .image-switcher .caja button:hover {
+    background-color: #05418f
+}
+
+.cajasProject .image-switcher .caja button .custom-button {
+    cursor: pointer
+}
+
+.cajasProject .image-switcher .caja button .custom-button a {
+    text-decoration: none
+}
+
+.cajasProject .image-switcher .caja button .fa-solid.fa-code {
+    color: #fff
+}
+
+.cajasContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10px
+}
+
+.cajasContact .caja {
+    flex: 1;
+    text-align: center;
+    margin: 0 0 0 auto
+}
+
+.cajasContact .caja h2 {
+    font-family: String value;
+    font-weight: Regular;
+    font-size: 32px
+}
+
+.cajasContact .caja h2 span {
+    font-weight: lighter
+}
+
+.cajasContact .caja img {
+    width: 200px;
+    display: inline
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px
+}
+
+header .logo img {
+    max-height: 100px
+}
+
+header ul {
+    display: flex;
+    gap: 40px
+}
+
+header ul li {
+    margin: 0
+}
+
+header ul li a {
+    font-family: String value;
+    text-decoration: none;
+    color: #000
+}
+
+header ul li a:hover {
+    color: #056c00
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 250px 10px;
+    padding: 20px 10px;
+    border-radius: 30px;
+    background-color: #21ba21
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px
+}
+
+footer a {
+    color: #000;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center
+}
